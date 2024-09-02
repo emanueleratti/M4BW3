@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script src="https://kit.fontawesome.com/1205482781.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Details</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+    
+          <!-- NAVBAR SIDE -->
+          <nav class="col-2 d-none d-xl-flex navbar navbar-expand navbar-white bg-navbar fixed-left justify-content-between" id="sidebar">
+            <div class="nav-container">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/Spotify_Logo.png" alt="Spotify_Logo" width="131" height="40" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-flex flex-column">
+                  <a class="nav-item nav-link" href="index.html"><i class="fas fa-home fa-lg"></i>&nbsp; Home</a>
+                  <a class="nav-item nav-link" href="#"><i class="fas fa-book-open fa-lg"></i>&nbsp; Your Library</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="nav-btn w-100 d-flex flex-column">
+              <button class="btn signup-btn w-100" type="button">Sign Up</button>
+              <button class="btn login-btn w-100" type="button">Login</button>
+              <span class="d-flex justify-content-around"><a href="#">Cookie Policy</a>|<a href="#">Privacy</a></span>
+            </div>
+          </nav>
+    
+          <!-- MAIN -->
+            <div class="col-12 py-5 col-xl-9 offset-xl-2 mainPage">
+              <div class="row d-flex flex-column">
+                <h2 class="col-12 artist-name mb-5"></h2>
+                <div class="col-2" id="target">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- NAVBAR BOTTOM -->
+      <div class="container-fluid fixed-bottom bg-container">
+        <div class="row">
+          <div class="col-lg-10 offset-xl-2">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-2 offset-3 offset-md-4 offset-lg-5 playerControls mt-3">
+                <div class="row">
+                  <a href="#">
+                    <img src="assets/Shuffle.png" alt="shuffle" />
+                  </a>
+                  <a href="#">
+                    <img src="assets/Previous.png" alt="shuffle" />
+                  </a>
+                  <a class="play" href="#">
+                    <img src="assets/Play.png" alt="shuffle" />
+                  </a>
+                  <a class="pause" href="#">
+                    <img src="assets/Pause.png" alt="shuffle" />
+                  </a>
+                  <a href="#">
+                    <img src="assets/Next.png" alt="shuffle" />
+                  </a>
+                  <a href="#">
+                    <img src="assets/Repeat.png" alt="shuffle" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center playBar py-3">
+              <div class="col-8 col-md-6">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="player-bar">
+        <audio id="player">
+            <source>
+        </audio>
+    </div>
+
+    <template>
+            <img src="https://picsum.photos/200/200" class="image w-100">
+            <div class="details">
+              <p class="track-name mt-3 mb-0">Titolo Traccia</p>
+              <p class="album-name">Titolo Album</p>
+            </div>
+    </template>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./js/details.js"></script></body>
+</html>
