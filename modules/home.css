@@ -1,0 +1,93 @@
+.personal {
+    border: 1px solid black;
+}
+
+.cardCustom {
+    background-color: orange;
+}
+
+
+.fontSizeCustom {
+    font-size: 0.8rem;
+}
+
+
+.card-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.album-cover {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    width: 50%;
+    transform: rotate(15deg);
+    transform-origin: bottom right;
+}
+
+.album-cover img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
+
+
+@media (max-width: 576px) {
+    .album-cover {
+        top: 17px;
+        left: 65px;
+        width: 50%;
+    }
+}
+
+
+/* Media Query per tablet (max-width: 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .album-cover {
+        top: 20px;
+        left: 85px;
+        width: 55%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .album-cover {
+        top: 30px;
+        left: 110px;
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .fontSizeCustom {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .fontSizeCustom {
+        font-size: 1.0rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fontSizeCustom {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .fontSizeCustom {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
