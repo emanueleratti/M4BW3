@@ -1,5 +1,3 @@
-
-
 export const artists = [
   'queen',
   'beatles',
@@ -82,7 +80,3 @@ export async function loadAlbums(artists) {
     }
   });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  loadAlbums(artists);
-});

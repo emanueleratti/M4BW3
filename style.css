@@ -5,8 +5,13 @@
 .bg-l-grey {background-color: #9f9f9f!important;}
 .m-grey {color: #414141!important;}
 .bg-m-grey {background-color: #414141!important;}
-.d-grey {color: #171717!important;} 
-.bg-d-grey {background-color: #171717!important;}
+.grey {color:  #191919!important;} 
+.bg-grey {background-color: #191919!important;}
+.d-grey {color: #0d0d0d!important;} 
+.bg-d-grey {background-color: #0d0d0d!important;}
+.green {color: #36c240!important;} 
+.bg-green {background-color: #36c240!important;}
+
 
 /* GENERAL */
 * {
@@ -16,7 +21,7 @@
 }
 
 body {
-    height: 100vh;
+    height: min-content;
 }
 
 .divider {
@@ -29,7 +34,8 @@ a {
 }
 
 a:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    color: #00d856!important;
 }
 
 /* NAVBAR */
@@ -45,9 +51,24 @@ nav a ion-icon {
     font-size: 1.2rem;
 }
 
+/* NAVBAR MOBILE */
+.mobile a ion-icon {
+    font-size: 1.6rem;
+}
+
+.mobile a {
+    font-size: 0.6rem;
+    text-decoration: none;
+}
+
+/* MAIN */
+input {
+    font-size: 0.8rem;
+}
+
 /* PLAYER AUDIO */
 .player-bar {
-    height: 100px;
+    height: 120px;
 }
   
 .player-bar a img {
