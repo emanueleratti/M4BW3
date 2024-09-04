@@ -1,0 +1,84 @@
+/* COLORS */
+.white {color: white!important;}
+.bg-white {background-color: white!important;}
+.l-grey {color: #9f9f9f!important;}
+.bg-l-grey {background-color: #9f9f9f!important;}
+.m-grey {color: #414141!important;}
+.bg-m-grey {background-color: #414141!important;}
+.d-grey {color: #171717!important;} 
+.bg-d-grey {background-color: #171717!important;}
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.divider {
+    height: 2px;
+}
+
+a {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* NAVBAR */
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a ion-icon {
+    font-size: 1.2rem;
+}
+
+/* PLAYER AUDIO */
+.player-bar {
+    height: 100px;
+}
+  
+.player-bar a img {
+    width: 14px;
+}
+  
+.progress-container, .volume-container {
+    height: 4.5px;
+    border-radius: 2px;
+    min-width: 90px;
+}
+
+.track-details a {
+    text-decoration: none;
+    line-height: 1rem;
+}
+
+.track-details .artist {
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.track-controls a {
+    font-size: 1.1rem;
+}
+
+.control-container a {
+    font-size: 1.2rem;
+}
+
+.control-container .play {
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
