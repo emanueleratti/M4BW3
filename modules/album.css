@@ -10,11 +10,11 @@
     font-size: 70px;
 }
 
-body {
+/* body {
     background: linear-gradient(to bottom, #6a0841 0%, #000000 100%);
     margin: 0;
     height: 100vh;
-}
+} */
 
 .card {
     width: 18rem; 
