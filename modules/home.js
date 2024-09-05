@@ -45,7 +45,7 @@ export async function loadAlbums(artists) {
       cardDiv.className = 'col';
 
       let albumLink = document.createElement('a');
-      albumLink.href = album.link;
+      albumLink.href = "#";
       albumLink.className = 'card h-100 ratio ratio-16x9 cardCustom card-container';
 
       albumLink.style.backgroundColor = getRandomColor();
@@ -74,9 +74,18 @@ export async function loadAlbums(artists) {
 
       cardDiv.appendChild(albumLink);
 
+      albumLink.onclick = function () {
+        goToAlbumPage(artist);
+      };
+
       albumContainer.appendChild(cardDiv);
     } catch (error) {
       console.error("Errore nel caricamento dell'artista:", artist, error);
     }
   });
 }
+
+export function goToAlbumPage(artist) {
+  window.location.href = `index.html/search?q=${artist}`;
+}
+

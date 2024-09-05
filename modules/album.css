@@ -1,0 +1,27 @@
+#colornav {
+    background-color: #f11e99;
+    height: 200px;
+    position: relative;
+}
+
+#colornav h1 {
+    position: absolute;
+    bottom: 20px;
+    font-size: 70px;
+}
+
+body {
+    background: linear-gradient(to bottom, #6a0841 0%, #000000 100%);
+    margin: 0;
+    height: 100vh;
+}
+
+.card {
+    width: 18rem; 
+    margin-bottom: 20px;
+}
+
+.card img {
+    height: 200px; 
+    object-fit: cover; 
+}
