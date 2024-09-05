@@ -1,24 +1,25 @@
 export function getAlbum() {
 
-const urlParams = new URLSearchParams(window.location.search);
-const artist = urlParams.get('artist');
+const urlParams = new URLSearchParams(location.search);
+const artist = urlParams.get('search');
 
 if (artist) {
-    fetch(`https://striveschool-api.herokuapp.com/api/deezer/artist/${artist}/albums`)
+    fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${artist}`)
     .then(response => response.json())
     .then(data => {
         const albums = data.data; 
         const albumContainer = document.getElementById('main-target');
+        albumContainer.innerHTML = "" 
 
         albums.forEach(album => {
             const col = document.createElement('div');
-            col.classList.add('col-md-4');
+            col.classList.add('col-md-3');
             
             const card = document.createElement('div');
             card.classList.add('card', 'h-100');
 
             const img = document.createElement('img');
-            img.src = album.cover_medium;
+            img.src = album.album.cover_medium;
             img.classList.add('card-img-top');
             img.alt = album.title;
             card.appendChild(img);
@@ -34,9 +35,9 @@ if (artist) {
             const button = document.createElement('button');
             button.classList.add('btn', 'btn-primary');
             button.textContent = "Vedi canzoni";
-            button.onclick = function () {
-                goToSongsPage(album.id);
-            };
+            // button.onclick = function () {
+            //     goToSongsPage(album.id);
+            // };
             cardBody.appendChild(button);
             
             card.appendChild(cardBody);
@@ -54,6 +55,6 @@ if (artist) {
 }
 };
 
-export function goToSongsPage(album) {
-    window.location.href = `songs.html?albumId=${album}`;
-}
+// export function goToSongsPage(album) {
+//     window.location.href = `index.html?search=${album}`;
+// }

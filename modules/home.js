@@ -39,8 +39,6 @@ export async function loadAlbums(artists) {
       let data = await response.json();
       let album = data.data[0];
 
-      console.log(album);
-
       let cardDiv = document.createElement('div');
       cardDiv.className = 'col';
 
@@ -86,6 +84,6 @@ export async function loadAlbums(artists) {
 }
 
 export function goToAlbumPage(artist) {
-  window.location.href = `index.html/search?q=${artist}`;
+  window.location.href = `index.html?search=${artist}`;
 }
 
