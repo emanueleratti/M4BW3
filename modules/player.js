@@ -1,9 +1,4 @@
-let canzoni = JSON.parse(localStorage.getItem('songToPlay')) || [];
-
-// function saveSongToLocalStorage () {
-//   localStorage.setItem('songToPlay', JSON.stringify(canzoni));
-// };
-
+let canzoni = [];
 let indiceCanzone = 0;
 const playBtn = document.querySelector("#play ion-icon");
 const nextBtn = document.getElementById("next");
