@@ -1,3 +1,4 @@
+// ARRAY CON ARTISTI GENERICI PER LA GENERAZIONE DELLE CARD AL PRIMO AVVIO
 export const artists = [
   'queen',
   'beatles',
@@ -21,6 +22,7 @@ export const artists = [
   'acdc'
 ];
 
+// FUNZIONE CHE ASSEGNA UN COLORE DI SFONDO RANDOM ALLE CARD
 export function getRandomColor() {
   const letters = '0123456789ABCDEF';
   let color = '#';
@@ -32,6 +34,7 @@ export function getRandomColor() {
 
 export async function loadAlbums(artists) {
   const albumContainer = document.getElementById('main-target');
+  albumContainer.innerHTML = "";
 
   artists.forEach(async (artist) => {
     try {
@@ -83,6 +86,7 @@ export async function loadAlbums(artists) {
   });
 }
 
+// FUNZIONE CHE AL CLICK DELLA CARD ASSEGNA AL QUERY PARAMS IL NOME DELL'ARTISTA SU CUI SI è CLICCATO
 export function goToAlbumPage(artist) {
   window.location.href = `index.html?search=${artist}`;
 }

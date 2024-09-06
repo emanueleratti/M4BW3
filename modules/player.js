@@ -1,3 +1,4 @@
+// ARRAY DOVE VIENE PUSHATA LA CANZONE DA RIPRODURRE
 let canzoni = [];
 let indiceCanzone = 0;
 const playBtn = document.querySelector("#play ion-icon");
